@@ -2,6 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 import { auth } from '../firebase/config'
 import HomeView from '../views/HomeView.vue'
 import AuthView from '../views/AuthView.vue'
+import AddTransation from '../views/AddTransation.vue'
+import HistoryView from '../views/HistoryView.vue'
+import Accountview from '../views/Accountview.vue'
 
 
 const routes = [
@@ -15,6 +18,21 @@ const routes = [
     path: '/auth',
     name: 'auth',
     component: AuthView,
+  },
+  {
+    path: '/add-transaction',
+    name: 'add-transaction',
+    component: AddTransation,
+  },
+  {
+    path: '/history',
+    name: 'history',
+    component: HistoryView,
+  },
+  {
+    path: '/account',
+    name: 'account',
+    component: Accountview,
   },
 
 ]
